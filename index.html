@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmDB get data</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="site-header pt-3 pb-3 bg-white shadow">
+        <div class="container">
+            <div class="site-header__wrapper d-flex align-items-center justify-content-between">
+                <a class="logo-link fs-1 fw-bold text-decoration-none text-danger" href="./index.html">
+                    Look
+                </a>
+                <nav class="site-header__navigation nav">
+                    <ul class="nav__list d-flex align-items-center column-gap-2">
+                        <li class="nav__items">
+                            <a class="nav__link" href="./index.html">
+                                Movies
+                            </a>
+                        </li>
+                        <li class="nav__items">
+                            <a class="nav__link" href="./series.html">
+                                Series
+                            </a>
+                        </li>
+                        <li class="nav__items">
+                            <a class="nav__link" href="./episode.html">
+                                Episode
+                            </a>
+                        </li>
+                        <li class="nav__items">
+                            <a class="nav__link" href="#">
+                                Comedy
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="site-main">
+        <div class="container">
+            <article class="site-article pt-5">
+                <form class="site-article__form js-form d-flex justify-content-center column-gap-3">
+                    <input class="js-search-input form-control" type="search" name="user_search" placeholder="Enter your movie" aria-label="enter your movie" required>
+                    <button class="js-btn btn btn-primary" type="submit">
+                        Search
+                    </button>
+                </form>
+                <ul class="movies-list d-flex flex-column row-gap-5 flex-md-row flex-wrap pt-5 pb-5"></ul>
+            </article>
+        </div>
+    </main>
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
