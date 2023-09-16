@@ -54,5 +54,5 @@ elForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
     const searchInputValue = elSearchInput.value.trim().toLowerCase();
     
-    getMoviesData(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${searchInputValue}&type=movie`);
+    getMoviesData(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchInputValue}&type=movie`);
 });
