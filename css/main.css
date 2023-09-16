@@ -1,5 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -12,8 +21,13 @@ img {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -30,7 +44,8 @@ body {
 
 .nav__link {
     font-size: 15px;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
 }
 
 .js-search-input {
@@ -80,22 +95,29 @@ body {
 }
 
 .movies-link-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .movies-link {
     padding: 3px 14px;
     font-size: 14px;
     text-align: center;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
     border: 2px solid #0d6efd;
     border-radius: 5px;
 }
 
 @media only screen and (min-width: 500px) {
     .nav__list {
-        column-gap: 15px !important;
+        -webkit-column-gap: 15px !important;
+           -moz-column-gap: 15px !important;
+                column-gap: 15px !important;
     }
 
     .nav__link {
@@ -105,7 +127,9 @@ body {
 
 @media only screen and (min-width: 768px) {
     .nav__list {
-        column-gap: 15px !important;
+        -webkit-column-gap: 15px !important;
+           -moz-column-gap: 15px !important;
+                column-gap: 15px !important;
     }
 
     .nav__link {
@@ -123,17 +147,22 @@ body {
 
 @media only screen and (min-width: 800px) {
     .nav__list {
-        column-gap: 25px !important;
+        -webkit-column-gap: 25px !important;
+           -moz-column-gap: 25px !important;
+                column-gap: 25px !important;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .nav__list {
-        column-gap: 35px !important;
+        -webkit-column-gap: 35px !important;
+           -moz-column-gap: 35px !important;
+                column-gap: 35px !important;
     }
 
     .nav__link {
         font-size: 18px;
+        -webkit-transition: border-bottom 0.7s ease;
         transition: border-bottom 0.7s ease;
     }
 
@@ -158,11 +187,15 @@ body {
     .movies-img {
         width: 270px;
         height: 250px;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: -webkit-transform 0.5s ease;
         transition: transform 0.5s ease;
+        transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     }
 
     .movies-img:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
     }
 
     .movies-type {
@@ -173,6 +206,7 @@ body {
     .movies-link {
         padding: 5px 25px;
         font-size: 16px;
+        -webkit-transition: color 0.4s ease, background-color 0.4s ease;
         transition: color 0.4s ease, background-color 0.4s ease;
     }
 
